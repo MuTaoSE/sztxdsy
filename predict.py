@@ -359,7 +359,7 @@ class CardPredictor:
                 card_img = dst[int(right_point[1]):int(heigth_point[1]), int(new_left_point[0]):int(right_point[0])]
                 card_imgs.append(card_img)
         # 开始使用颜色定位，排除不是车牌的矩形，目前只识别蓝、绿、黄车牌
-        # 开始使用颜色定位，排除不是车牌的矩形，目前只识别蓝、绿、黄车牌
+
         colors = []
         for card_index, card_img in enumerate(card_imgs):
             green = yello = blue = black = white = 0
